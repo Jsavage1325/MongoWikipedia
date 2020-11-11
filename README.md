@@ -1,0 +1,1 @@
+A Wikipedia project to store Wikipedia pages on a MongoDB server using the Wikipedia API to pull data. Data is then converted to an appropriate format and stored. Data can then be pulled from the database and viewed using PyGui.
