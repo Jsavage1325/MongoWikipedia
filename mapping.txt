@@ -1,0 +1,10 @@
+The Wikipedia information will be able to mapped into MongoDB by the following JSON format
+{
+    name: "PageName"                // title used as id from page.title
+    {
+        content: "content",         // content of page as text from page.content
+        links: "links",             // (csv) links to other pages via string name from page.links
+        images: "images",           // (csv) links to images in wikimedia from page.images
+        references: "references"    // (csv) links to all references from page.references
+    }
+}
