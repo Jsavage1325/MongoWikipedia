@@ -95,9 +95,9 @@ def display_page(name, mongo):
 
 
 def main_window(mongo):
-    layout = [[sg.Text("Choose an option")], [sg.Button("Add a page")], [sg.Button("View all pages")],
-              [sg.InputText('Banana', key='input')],
-              [sg.Listbox(values=[], enable_events=True, size=(40, 20), key="_LISTBOX_")], [sg.Button("Exit")]]
+    layout = [[sg.Text("Choose an option")], [sg.Button("Add a page"), sg.InputText('Enter page name here', key='input')],
+              [sg.Button("View all pages")], [sg.Listbox(values=[], enable_events=True, size=(40, 20), key="_LISTBOX_")],
+              [sg.Button("Exit")]]
     window = sg.Window(title="Wikipedia Pages", layout=layout)
 
     # event loop for window
